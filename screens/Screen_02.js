@@ -45,7 +45,7 @@ export default function App({ navigation }) {
     };
 
     return (
-        <ScrollView stickyHeaderIndices={[0]}>
+        <ScrollView >
             <View style={styles.header}>
                 <TouchableOpacity onPress={() => navigation.navigate("Screen_01")}>
 
@@ -53,7 +53,7 @@ export default function App({ navigation }) {
                 </TouchableOpacity>
 
                 <TouchableOpacity onPress={() => navigation.navigate("Screen_03", { cart })}>
-                    <Image source={require('../assets/Data/Image_182.png')} style={styles.icon} />
+                <Image source={require('../assets/Data/Image_182.png')} style={{marginLeft:280}} />
 
                 </TouchableOpacity>
             </View>

@@ -11,10 +11,10 @@ export default function App() {
   return (
     <CartProvider>
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Screen_01" screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Screen_01" component={Screen_01} />
-        <Stack.Screen name="Screen_02" component={Screen_02} />
-        <Stack.Screen name="Screen_03" component={Screen_03} />
+      <Stack.Navigator initialRouteName="Screen_01" >
+        <Stack.Screen name="Screen_01" component={Screen_01} options={{title:'' }} />
+        <Stack.Screen name="Screen_02" component={Screen_02} options={{title:'' }}/>
+        <Stack.Screen name="Screen_03" component={Screen_03} options={{title:'' }}/>
 
       </Stack.Navigator>
       <Toast ref={(ref) => Toast.setRef(ref)} />
